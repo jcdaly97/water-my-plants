@@ -1,0 +1,80 @@
+
+.signUpContent{
+    .flexIt();
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: @mainMargin;
+    .title{
+        width: 100%;
+        text-align: center;
+        margin: 5% 0;
+    }
+}
+
+.listOfFeatures{
+    height: 95%;
+    .flexIt();
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .feature{
+       
+        margin: 4% 0;
+        width: 100%;
+        .flexIt();
+        justify-content: space-evenly;
+        align-items: center;
+        .featureText{
+            width: 40%;
+            padding: 10% 10%;
+             border: 2px solid @peach;
+             border-radius: 5px;
+             @media @mobile {
+                width: 80%;
+             }
+        }
+        .featureImg{
+            max-width: 40%;
+            height: auto;
+            border-radius: 12px;
+            @media @mobile {
+               display: none; 
+            }
+        }
+    }
+
+}
+.newFeaturesSection{
+    .flexIt();
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0;
+   
+    h2{
+        margin-bottom: 4%
+    }
+    .newFeatures{
+        .flexIt();
+         @media @mobile{
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center; 
+        }
+        justify-content: space-evenly;
+
+        .newFeature{
+            padding: 1%;
+            max-width: 30%;
+            text-align: center;
+            border: 2px solid @peach;
+            border-radius: 5px;
+            @media @mobile{
+               max-width: 80%;
+               margin: 4% 0;
+            }
+        }
+
+    }
+}
